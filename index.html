@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="new.css">
+  <script src="https://kit.fontawesome.com/c39f78c41a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <section class="head-section">
+      <a href="#" class="logo">Brum</a>
+      <nav class="nav-bar">
+        <a href="#">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">Listings</a>
+        <a href="#">Sign in</a>
+        <img class="cancel" src="images/cancel.jpg" alt="cancel button">
+      </nav>
+      <div class="menu-sec">
+        <img class="menu" src="images/menu.png" alt="menu image">
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="content">
+      <div class="discover">
+        <h1>New to Birmingham? Travel Around With Us</h1>
+        <p>Best guide of your favorite city...</p>
+      </div>
+      <div class="input-sec">
+        <label class="looking">What are you looking for?</label>
+        <div class="destinations">
+          <div class="labCont">
+            <label for="destinations">Your Destination</label>
+              <select name="destinations" id="destinations">
+                <option value="">Your Destionation</option>
+                <option value="Birmingham-Museum and Art Gallery">Birmingham Museum and Art Gallery</option>
+                <option value="Library of Birmingham">Library of Birmingham</option>
+                <option value="Symphony Hall">Symphony Hall</option>
+                <option value="National Motorcycle Museum">National Motorcycle Museum</option>
+                <option value="Winterbourne House and Garden">Winderbourne House and Garden</option>
+                <option value="Cadbury World">Cadbury World</option>
+              </select>
+          </div>
+          <div class="labCont">
+            <label for="categories">All Categories</label>
+              <select name="categories" id="categories">
+                <option value="">Your Categories</option>
+                <option value="1">Natural Attractions</option>
+                <option value="2">Historical and Cultural Attractions</option>
+                <option value="3">Man-Made Attractions</option>
+                <option value="4">Leisure and Entertainment</option>
+                <option value="5">Special Interest</option>
+              </select>
+          </div>
+          <div class="labCont">
+            <label for="prices">All Prices</label>
+              <select name="prices" id="prices">
+                <option value="0">All Prices</option>
+                <option value="1">£50 - £60</option>
+                <option value="2">£60 - £70</option>
+                <option value="3">70 - £80</option>
+                <option value="4">£80 - £90</option>
+              </select>
+          </div>
+          <button><img src="" alt=""> Search</button>
+        </div>
+      </div>
+    </section>
+    <section class="look-around">
+      <div class="facts">
+        <div class="img-div">
+          <a href="images/birmingham Museum.jpg"><img src="images/birmingham Museum.jpg"> </a>
+        </div>
+        <div class="info">
+            <p>Birmingham Museum and Art Gallery</p>
+        </div>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="img-div">
+          <a href="images/Library.jpeg"><img src="images/Library.jpeg"></a>
+        </div>
+        <div class="info">
+          <p>Birmingham Library</p>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="img-div">
+          <a href="images/symphony hall].jpeg"><img src="images/symphony hall].jpeg"></a>
+        </div>
+        <div class="info">
+          <p>Symphony Hall</p>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="img-div">
+          <a href="images/motorcyle museum.jpeg"><img src="images/motorcyle museum.jpeg"></a>
+        </div>
+        <div class="info">
+          <p>National Motorcycle Museum</p>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="img-div">
+          <a href="images/winderbourne.jpeg"><img src="images/winderbourne.jpeg"></a>
+        </div>
+        <div class="info">
+          <p>Winderbourne House and Garden</p>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="img-div">
+          <a href="images/cadbury world.jpeg"><img src="images/cadbury world.jpeg"></a>
+        </div>
+        <div class="info">
+          <p>Cadbury World</p>
+        </div>
+      </div>
+    </section>
+    <section class="more-about">
+      <h2>Discover more about my city </h2>
+      <p class="birm">
+        Birmingham is a vibrant city known for its extensive canal network, boasting more miles of canals than Venice. It has a youthful population, with nearly 40% under the age of 25, and is famous for its culinary innovation, being the birthplace of the Balti curry. The city is a cultural hub, home to the largest public library in Europe and a significant collection of Pre-Raphaelite art. Birmingham is also one of the greenest cities in the UK, with over 8,000 acres of parks. Historically, it was a manufacturing powerhouse during the Industrial Revolution, earning the nickname “City of a Thousand Trades.” The city has a rich musical heritage, being the birthplace of heavy metal, and has notable sporting history, including the founding of the Football League and the first ODEON cinema.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>CodeYourFuture</p>
+    <p>lisuzuci@heesomo.sn</p>
+    <p>(412) 485-8593</p>
+  </footer>
+
+  <script>
+    const menu = document.querySelector('.menu-sec img');
+    const navBar = document.querySelector('.nav-bar');
+    const cancelButton = document.querySelector('.cancel');
+    
+    menu.addEventListener('click', ()=> {
+      navBar.style.opacity = '1';
+    });
+    cancelButton.addEventListener('click', ()=> {
+      navBar.style.opacity = '0';
+      navBar.style.transition = '0.5s'
+    })
+  </script>
+</body>
+</html>
